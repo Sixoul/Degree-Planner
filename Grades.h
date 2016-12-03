@@ -1,4 +1,13 @@
-#pragma once
+#ifndef GRADES_H
+#define GRADES_H
+
+/////////////////////////////////////////////////////////////////////////////////
+//	Class: Grades  							      //
+//	Author: Louis Wagner						     //
+//	Description: Component used to create grades for a course.	    //
+//		     Pulls the grade from a database and sends it to       //
+//		     a course object.					  //
+///////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
 using namespace std;
@@ -26,3 +35,6 @@ public:
 	int digitCount(int num);
 	bool hasSpecialChar(string input);
 };
+
+
+#endif // GRADES_H
