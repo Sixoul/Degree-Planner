@@ -1,5 +1,6 @@
 #include "Grades.h"
 
+//returns the amount of digits in a number
 int Grades::digitCount(int num)
 {
 	int digits = 0;
@@ -12,6 +13,7 @@ int Grades::digitCount(int num)
 	return digits;
 }
 
+//Checks for any character that isn't alphabetic, a space, or -.
 bool Grades::hasSpecialChar(string input)
 {
 	bool isTrue = false;
@@ -33,6 +35,7 @@ bool Grades::hasSpecialChar(string input)
 
 }
 
+//Constructors
 Grades::Grades()
 {
 	setCourseID(00000);
@@ -45,6 +48,7 @@ Grades::Grades(int newCourse, string newProf)
 	setProfName(newProf);
 }
 
+//Sets
 void Grades::setCourseID(int newCourse)
 {
 	if (digitCount(newCourse) == 5)
@@ -72,6 +76,7 @@ void Grades::setProfName(string newProf)
 	}
 }
 
+/Gets
 int Grades::getCourseID()
 {
 	return courseID;
