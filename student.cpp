@@ -1,14 +1,11 @@
-/*************************************************
-Kevin Enario
-student.cpp
-
-Student class
-The purpose of the student class is to store information
-regarding the student from a database containing the
-students information.
-
-12/3/2016
-*************************************************/
+/***********************************************************************
+Author name:  Kevin Enario
+Date:  12/3/2016
+Module name:  Student Class, student.cpp
+Description:  The purpose of the student class is to store information
+			  regarding the student from a database containing the
+			  students information.
+***********************************************************************/
 
 #include "student.h"
 #include <iostream>
@@ -24,32 +21,32 @@ int student::getId(){
 	return studentID;
 }
 
-//sets the students year
+//returns the students year
 int student::getYear(){
 	return year;
 }
 
-//sets the students gpa
+//returns the students gpa
 float student::getGPA(){
 	return gpa;
 }
 
-//sets the students name
+//returns the students name
 string student::getName(){
 	return studentName;
 }
 
-//sets the students term
+//returns the students term
 string student::getTerm(){
 	return term;
 }
 
-//sets the name of the course
+//returns the course name
 string student::getCourseName(){
 	return courseName;
 }
 
-//sets the students grade
+//returns the students grade
 string student::getGrade(){
 	return grade;
 }
