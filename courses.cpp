@@ -30,8 +30,9 @@ void CoursesList::AddToList()
 	int addUnits;
 	string addTime;
 	string addProfessor;
-
-	cout << "Class Name: ";
+	
+	//optional if not reading from a database or file
+	/*cout << "Class Name: ";
 	cin >> addClassName;
 	cout << "Enter ClassID: ";
 	cin >> addClassID;
@@ -42,7 +43,7 @@ void CoursesList::AddToList()
 	cout << "Add Time: ";
 	cin >> addTime;
 	cout << "Name of professor:";
-	cin >> addProfessor;
+	cin >> addProfessor;*/
 
 	Courses *cors = new Courses;
 	cors->className = addClassName;
