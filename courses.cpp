@@ -66,8 +66,6 @@ void CoursesList::AddToList()
 		{
 			PrevPtr = Currtptr;
 			Currtptr = Currtptr->link;
-			//InsertBeginning(emp, PrevPtr) I tried to pass the previous pointer and the emp to a intesert to
-			//InsertBeginning that way it would insert at the beginning instead of the bottom like it does now
 		}
 		if (Currtptr == NULL)
 			PrevPtr->link = cors;
