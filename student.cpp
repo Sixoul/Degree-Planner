@@ -25,33 +25,33 @@ int student::getId(){
 }
 
 //sets the students year
-void student::setYear(int y){
-	year = y;
+int student::getYear(){
+	return year;
 }
 
 //sets the students gpa
-void student::setGPA(float g){
-	gpa = g;
+float student::getGPA(){
+	return gpa;
 }
 
 //sets the students name
-void student::setName(string name){
-	studentName = name;
+string student::getName(){
+	return studentName;
 }
 
 //sets the students term
-void student::setTerm(string t){
-	term = t;
+string student::getTerm(){
+	return term;
 }
 
 //sets the name of the course
-void student::setCourseName(string course){
-	courseName = course;
+string student::getCourseName(){
+	return courseName;
 }
 
 //sets the students grade
-void student::setGrade(string g){
-	grade = g;	
+string student::getGrade(){
+	return grade;
 }
 
 //shows all student information
