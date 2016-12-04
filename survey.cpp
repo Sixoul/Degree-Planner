@@ -1,4 +1,10 @@
-survey.cpp
+/*******************************************************
+Author name:  Miguel Sanchez
+Date:  12/3/2016
+Module name:   	Survey class, survey.cpp
+Description:	???
+*******************************************************/
+//survey.cpp
 
 #include "survey.h"
 
