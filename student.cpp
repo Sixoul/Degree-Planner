@@ -3,8 +3,8 @@ Author name:  Kevin Enario
 Date:  12/3/2016
 Module name:  Student Class, student.cpp
 Description:  The purpose of the student class is to store information
-			  regarding the student from a database containing the
-			  students information.
+	      regarding the student from a database containing the
+	      students information.
 ***********************************************************************/
 
 #include "student.h"
