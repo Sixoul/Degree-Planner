@@ -1,38 +1,89 @@
 /*******************************************************
 Author name:  Miguel Sanchez
 Date:  12/3/2016
-Module name:   	Survey class, survey.cpp
-Description:	???
+Module name:  Survey Class, Survey.cpp
+Rev Author: Louis Wagner
+Rev Version: 2.0
 *******************************************************/
-//survey.cpp
 
-#include "survey.h"
+#include "Survey.h"
 
-survey::survey()
+//constructors
+Survey::Survey()
 {
-	Cname = "Null";
-	major = "Null";
-	Trating = 0;
-	difficulty = 0;
+	setCourse("Null");
+	setMajor("Null");
+	setHour(0);
+	setRating(0);
+	setWork(0);
 }
 
-void survey::getvalues(string name, string m, int r, int d)
+Survey::Survey(string newCourse, string newMajor, int newHour, int newRating, int newWork)
 {
-	Cname = name;
-	major = m;
-	Trating = r;
-	difficulty = d;
+	setCourse(newCourse);
+	setMajor(newMajor);
+	setHour(newHour);
+	setRating(newRating);
+	setWork(newWork);
+}
+//end of constructors
+
+//get methods
+string Survey::getCourse()
+{
+	return course;
 }
 
-void survey::display()
+string Survey::getMajor()
 {
-	cout << "\nCourse name: ";
-	cout << Cname;
-	cout << "\nStudents major: ";
-	cout << major;
-	cout << "\nProfessor rating, 0-5, '0' being the lowest: ";
-	cout << Trating;
-	cout << "\nClass rating, 0-5, '0' being the lowest: ";
-	cout << difficulty;
+	return major;
 }
-//end of survey.cpp
+
+int Survey::getHour()
+{
+	return hour;
+}
+
+int Survey::getRating()
+{
+	return rating;
+}
+
+int Survey::getWork()
+{
+	return work;
+}
+//end of get methods
+
+//set methods
+void Survey::setCourse(string newCourse)
+{
+	course = newCourse;
+}
+
+void Survey::setMajor(string newMajor)
+{
+	major = newMajor;
+}
+
+void Survey::setHour(int newHour)
+{
+	hour = newHour;
+}
+
+void Survey::setRating(int newRating)
+{
+	rating = newRating;
+}
+
+void Survey::setWork(int newWork)
+{
+	work = newWork;
+}
+//end of set methods
+
+void Survey::toString()
+{
+	cout << Survey::getCourse() << '\n' << Survey::getMajor() << '\n' << Survey::getHour() << '\n'
+		<< Survey::getRating() << '\n' << Survey::getWork() << '\n';
+}
