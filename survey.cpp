@@ -28,3 +28,5 @@ void survey::display()
 	cout << Trating;
 	cout << "\nClass rating, 0-5, '0' being the lowest: ";
 	cout << difficulty;
+}
+//end of survey.cpp
