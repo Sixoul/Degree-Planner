@@ -1,41 +1,44 @@
 /*******************************************************
-Author name:	Louis Wagner
-Date:	12/3/2016
-Module name:	Grades header, Grades.h
-Description:	Component used to create grades for a
-		Pulls grades from a database, calculate
-		average and sends to course object.
+Author name:  Miguel Sanchez
+Date:  12/3/2016
+Module name:  Survey Header, Survey.h
+Rev Author: Louis Wagner
+Rev Version: 2.0
 *******************************************************/
-
-#ifndef GRADES_H
-#define GRADES_H
+#ifndef SURVEY_H
+#define SURVEY_H
 
 #include <iostream>
+#include <string>
+
 using namespace std;
 
-class Grades
+class Survey
 {
 private:
-	int courseID;
-	float grade, avgGrade;
-	string profName;
+	string course, major;
+	int hour, rating, work;
 
 public:
-	Grades();
-	Grades(int newCourse, string newProf);
+	//constructors
+	Survey();
+	Survey(string newCourse, string newMajor, int newHour, int newRating, int newWork);
 
-	int getCourseID();
-	float getGrade();
-	float getAvgGrade();
-	string getProfName();
+	//get methods
+	string getCourse();
+	string getMajor();
+	int getHour();
+	int getRating();
+	int getWork();
 
-	void setCourseID(int newCourse);
-	void setGrade(float newGrade);
-	void setProfName(string newProf);
+	//set methods
+	void setCourse(string);
+	void setMajor(string);
+	void setHour(int);
+	void setRating(int);
+	void setWork(int);
 
-	int digitCount(int num);
-	bool hasSpecialChar(string input);
+	//debug to print out string to console
+	void toString();
 };
-
-
-#endif // GRADES_H
+#endif // SURVEY_H
