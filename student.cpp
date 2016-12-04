@@ -1,7 +1,13 @@
 /*************************************************
 Kevin Enario
 student.cpp
-student class
+
+Student class
+The purpose of the student class is to store information
+regarding the student from a database containing the
+students information.
+
+12/3/2016
 *************************************************/
 
 #include "student.h"
