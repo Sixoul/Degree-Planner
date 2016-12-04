@@ -1,7 +1,7 @@
 /*******************************************************
 Author name:	Louis Wagner
 Date:	12/3/2016
-Module name:	Grades header, Grades.cpp
+Module name:	Grades header, Grades.h
 Description:	Component used to create grades for a
 		Pulls grades from a database, calculate
 		average and sends to course object.
