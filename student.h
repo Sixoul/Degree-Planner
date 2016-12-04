@@ -1,8 +1,7 @@
 /*******************************************************
-Kevin Enario
-student.h
-Student class
-
+Author name:  Kevin Enario
+Date:  12/3/2016
+Module name:  Student Header, student.h
 *******************************************************/
 
 #ifndef student_h
@@ -40,6 +39,8 @@ class student {
 };
 
 #endif
+
+	
 
 	
 	
