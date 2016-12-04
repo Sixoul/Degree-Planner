@@ -1,3 +1,4 @@
+#include<fstream>
 #include "string" 
 #include "list" 
 #include "iostream" 
@@ -24,12 +25,36 @@ CoursesList::~CoursesList()
 
 void CoursesList::AddToList()
 {
+	ifstream input("courses.txt");
+	
 	string addClassName;
 	int addClassID;
 	string addClassRoom;
 	int addUnits;
 	string addTime;
 	string addProfessor;
+	
+	//=====================================================
+	if (input.fail()) //if file did not exist
+	{
+		cout << "fail" << endl;
+		return;
+	}
+	else
+	{
+		cout << "SUCCESS" << endl;
+		while (!input.eof()) //if file not end of file
+		{
+			//read data from txt file named list
+			getline(input, addClassName);
+			input >> addClassID;
+			input >> addUnits;
+			getline(input, addClassRoom);
+			getline(input, addDays);
+			getline(input, addDays);
+			getline(input, addProfessor);
+		}
+	}
 	
 	//optional if not reading from a database or file
 	/*cout << "Class Name: ";
