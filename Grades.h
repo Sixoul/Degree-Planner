@@ -1,13 +1,14 @@
+/*******************************************************
+Author name:	Louis Wagner
+Date:	12/3/2016
+Module name:	Grades header, Grades.cpp
+Description:	Component used to create grades for a
+		Pulls grades from a database, calculate
+		average and sends to course object.
+*******************************************************/
+
 #ifndef GRADES_H
 #define GRADES_H
-
-/////////////////////////////////////////////////////////////////////////////////
-//	Class: Grades  							      //
-//	Author: Louis Wagner						     //
-//	Description: Component used to create grades for a course.	    //
-//		     Pulls the grade from a database and sends it to       //
-//		     a course object.					  //
-///////////////////////////////////////////////////////////////////////////
 
 #include <iostream>
 using namespace std;
