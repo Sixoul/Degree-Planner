@@ -1,7 +1,8 @@
 /*******************************************************
 Kevin Enario
 student.h
-student class
+Student class
+
 *******************************************************/
 
 #ifndef student_h
@@ -12,7 +13,7 @@ student class
 using namespace std;
 
 class student {
-	public:
+	private:
 		//data fields
 		int studentID;
 		int year;
@@ -21,23 +22,24 @@ class student {
 		string courseName;
 		string grade;
 		string term;
-		
+	public:
 		//constructor
 		student(int);
 		
 		//members		
 		int getId(void);
-		void setYear(int);
-		void setGPA(float);
-		void setName(string);
-		void setTerm(string);
-		void setCourseName(string);
-		void setGrade(string);
-		void setInfo(void);
-		void showInfo(void);
-		void saveInfo(void);
+		int getYear();
+		float getGPA();
+		string getName();
+		string getTerm();
+		string getCourseName();
+		string getGrade();
+		void setInfo();
+		void showInfo();
+		void saveInfo();
 };
 
 #endif
 
+	
 	
