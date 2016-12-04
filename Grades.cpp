@@ -1,3 +1,8 @@
+/*******************************************************
+Author name:  Louis Wagner
+Date:  12/3/2016
+Module name:  Grades Class, Grades.cpp
+*******************************************************/
 #include "Grades.h"
 
 //returns the amount of digits in a number
