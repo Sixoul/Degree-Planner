@@ -1,3 +1,10 @@
+/**************************************
+Author's Name: Ramon Bautista
+Date: 12/5/2016
+Module Name: rb_101, courses.h
+Description: creating objects to hold information and then add to the linkedlist
+*******************************************/
+
 #include "string" 
 #include "list" 
 #include "iostream" 
