@@ -7,9 +7,10 @@ using namespace std;
 
 struct Courses {
 	string className;
-	int classID;
+	string classID;
+	string units;
 	string classRoom;
-	int units;
+	string days;
 	string time;
 	string professor;
 	Courses* link;
