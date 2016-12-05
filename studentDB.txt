@@ -1,0 +1,11 @@
+('107217316', 'Kevin Enario', 'MATH 110', 'Fall', '2',	'B', '3.80')
+('523940395', 'Dovahkin', 'KIN 900', 'Summer', '3', 'A', '1.9')
+('107217316', 'Kevin Enario', 'ART 225', 'Fall', '2', 'A', '3.80')
+('900353734', 'Edward Elric', 'CHEM 101', 'Spring', '1', 'A', '3.52')
+('900353734', 'Edward Elric', 'ART 125', 'Spring', '1', 'D', '3.52')
+('107217316', 'Kevin Enario', 'ENGL 210', 'Fall', '2', 'A', '3.80')
+('600383955', 'En Sabah-Nur', 'ARCH 324', 'Spring', '4', 'A', '4.0')
+('725634800', 'Geralt of Rivia', 'CHEM 456', 'Spring', '4', 'A', '4.0')
+('107217316', 'Kevin Enario', 'PSYCH 210', 'Fall', '2', 'C', '3.80')
+('300589394', 'Celty Sturluson', 'HIST 353', 'Spring', '3', 'A', '4.0')
+
