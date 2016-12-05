@@ -6,6 +6,7 @@
 using namespace std;
 
 struct Courses {
+	//objects to hold information and pass it to a linkedlist
 	string className;
 	string classID;
 	string units;
@@ -18,10 +19,10 @@ struct Courses {
 
 class CoursesList {
 public:
-	CoursesList();
-	~CoursesList();
-	void AddToList();
-	void ViewList();
+	CoursesList();//constructor
+	~CoursesList();//deconstructor
+	void AddToList();//to add the courses to a linkedlist to view
+	void ViewList();//it reads the linkedlist and outputs the data to see the courses offered
 private:
-	Courses* head;
+	Courses* head;//the head of the linkedlist
 };
