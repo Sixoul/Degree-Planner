@@ -1,7 +1,7 @@
 /**************************************
 Author's Name: Ramon Bautista
 Date: 12/5/2016
-Module Name: rb_101, courses.cpp
+Module Name: rb_102, courses.cpp
 Description: it read from a file and adds to the a linkedlist and then has a function to display everything in the linkedlist
 *******************************************/
 
