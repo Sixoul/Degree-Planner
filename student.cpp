@@ -1,3 +1,4 @@
+
 /***********************************************************************
 Author name:  Kevin Enario
 Date:  12/3/2016
@@ -12,43 +13,46 @@ Description:  The purpose of the student class is to store information
 
 //constructor for the student class
 //takes student id number as the argument
-student::student(int idNumber){
+student::student(string idNumber){
 	studentID = idNumber;
 }
 
-//returns the student id number
-int student::getId(){
+//setters
+void student::setName(string name){
+	studentName = name;
+}
+
+void student::setGPA(string g){
+	gpa = g;
+}
+
+void student::setYear(string y){
+	year = y;
+}
+
+void student::setCourse(string course){
+	courseName.push_back(course);
+}
+
+void student::setGrade(string gr){
+	grade.push_back(gr);
+}
+
+void student::setTerm(string t){
+	term.push_back(t);
+}
+
+//getters
+string student::getId(){
 	return studentID;
 }
 
-//returns the students year
-int student::getYear(){
-	return year;
-}
-
-//returns the students gpa
-float student::getGPA(){
+string student::getGPA(){
 	return gpa;
 }
 
-//returns the students name
 string student::getName(){
 	return studentName;
-}
-
-//returns the students term
-string student::getTerm(){
-	return term;
-}
-
-//returns the course name
-string student::getCourseName(){
-	return courseName;
-}
-
-//returns the students grade
-string student::getGrade(){
-	return grade;
 }
 
 //shows all student information
@@ -57,12 +61,14 @@ void student::showInfo(){
 	cout << "Student information" << endl;
 	cout << "-------------------" << endl;
 	cout << "Student ID: " << studentID << endl;
-	cout << "Name: " << studentName << endl;
-	cout << "Term: " << term << endl;
-	cout << "Course: " << courseName << endl;
-	cout << "Grade: " << grade << endl;
+	cout << "Name: " << studentName << endl;	
 	cout << "GPA: " << gpa << endl;
-	cout << "Year: " << year << endl << endl;
+	cout << "Year: " << year << endl;
+	//the vector data fields use for loops to iterate and display
+	for (int x = 0; x < courseName.size(); x++){
+		cout << "Course: " << courseName[x] << "  Term: " <<
+			term[x] << "  Grade: " << grade[x] << endl;
+	}	
 }
 
 //function that takes the information from "database"
@@ -74,3 +80,4 @@ void student::setInfo(){
 void student::saveInfo(){
 	
 }
+
