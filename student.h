@@ -8,31 +8,37 @@ Module name:  Student Header, student.h
 #define student_h
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class student {
 	private:
-		//data fields
-		int studentID;
-		int year;
-		float gpa;
+		//private data fields
+		string studentID;
 		string studentName;
-		string courseName;
-		string grade;
-		string term;
+		string gpa;		
+		string year;
 	public:
 		//constructor
-		student(int);
+		student(string);
+		
+		/*public vectors for easier access in getting
+		  the information stored.*/
+		vector<string> courseName;
+		vector<string> grade;
+		vector<string> term;
 		
 		//members		
-		int getId(void);
-		int getYear();
-		float getGPA();
+		void setName(string);
+		void setGPA(string);
+		void setYear(string);
+		void setCourse(string);
+		void setGrade(string);
+		void setTerm(string);
+		string getId();
+		string getGPA();
 		string getName();
-		string getTerm();
-		string getCourseName();
-		string getGrade();
 		void setInfo();
 		void showInfo();
 		void saveInfo();
@@ -41,6 +47,5 @@ class student {
 #endif
 
 	
-
 	
 	
