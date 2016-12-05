@@ -25,7 +25,7 @@ CoursesList::~CoursesList()
 
 void CoursesList::AddToList()
 {
-
+	//local variables
 	string addClassName;
 	string addClassID;
 	string addUnits;
@@ -36,10 +36,11 @@ void CoursesList::AddToList()
 
 
 	ifstream inputFile;
-	inputFile.open("courses.txt");
+	inputFile.open("courses.txt");//open file to rea
 
-	while (!inputFile.eof()) //if file not end of file
+	while (!inputFile.eof()) //read file until it reaches the end of the file
 	{
+		//reads file and assigns the line of file to the variable (right in the parentheses)
 		getline(inputFile, addClassName);
 		getline(inputFile, addClassID);
 		getline(inputFile, addUnits);
@@ -48,7 +49,7 @@ void CoursesList::AddToList()
 		getline(inputFile, addTime);
 		getline(inputFile, addProfessor);
 		
-
+		//variable points to and assigns it to the object, and creates a new instance to then add to a linkedlist
 		Courses *cors = new Courses;
 		cors->className = addClassName;
 		cors->classID = addClassID;
@@ -62,10 +63,11 @@ void CoursesList::AddToList()
 		Courses *Currtptr = NULL;
 		Courses *PrevPtr = NULL;
 
-		if (head == NULL)
+		if (head == NULL)// if the linkedlist is empty then insert node to the top of the linkedlist
 			head = cors;
 		else
 		{
+			//if the linkedlist is not empty then insert node and move pointer to new node
 			Currtptr = head;
 			while (Currtptr != NULL)
 			{
@@ -83,10 +85,11 @@ void CoursesList::ViewList()
 {
 	Courses *ptr = NULL;
 
-	if (head == NULL)
+	if (head == NULL)// if the linkedlist is empty then return nothing
 		return;
 	else
 	{
+		//go throught linkedlist and display everything that is in the linked list
 		ptr = head;
 		while (ptr != NULL)
 		{
