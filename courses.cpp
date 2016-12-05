@@ -76,7 +76,6 @@ void CoursesList::AddToList()
 				PrevPtr->link = cors;
 		}
 	}
-	CoursesList::ViewList();
 }
 
 
